@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+#App {
+  display: grid;
+  grid-template-rows: 75vh auto;
+  /* 7% 40% auto */
+  grid-template-columns: 30vw 40vw 30vw;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  justify-items: center;
+}
+
+#PokemonListContainer{
+  grid-row: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 20% 75% auto;
+}
+
+#Search {
+  grid-row: 1;
+  width: 40vw;
+  z-index: 2;
+}
+
+#PokemonList {
+  position:fixed;
+  bottom: 1vh;
+  left: 29vw;
+  height: 16vh;
+  width: 40vw;
+  overflow: scroll;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  padding: 1%;
+  padding-top: 0;
+  text-align: center;
+  z-index: 3;
+}
+
+button {
+  margin: 1%;
+  padding: 1%;
+  font-size: calc(10px + .5vw);
+}
+
+#Sprite {
+  height: 75vh;
+  grid-row: 1;
+  grid-column: 2;
+  z-index: 1;
+}
